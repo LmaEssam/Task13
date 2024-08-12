@@ -1,0 +1,41 @@
+html{
+  width: 100%;
+  height: 100%;
+}
+#root{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body.dark-theme {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #141D2F;
+  color: #fff; 
+}
+body.light-theme {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F2F2F2; 
+  color: #000; 
+}
+@media only screen and (max-width:375px) {
+  #root{
+    margin-left: 0px;
+  }
+
+  
+}
+
