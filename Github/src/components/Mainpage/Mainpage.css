@@ -51,7 +51,7 @@
 }
 #content{
     width: 730px;
-    height: 419px;
+    height: 445px;
     background-color: #1E2A47;
     border-radius: 10px;
     display: flex;
@@ -70,8 +70,11 @@
    align-items: center;
   
 }
-#avatar{
+.avatar{
     margin-left: 20px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50px;
 }
 #info{
     display: flex;
@@ -95,7 +98,7 @@
     margin: 0;
     color: white;
     font-family: 'SpaceMono-B';
-    font-size: 26px;
+    font-size: 20px;
     color: white;
 }
 .light-theme #name{
@@ -104,6 +107,7 @@
 #mention{
     color: #0079FF;
     font-family:'SpaceMono-R' ;
+    cursor: pointer;
 }
 #date{
     color: white;
@@ -114,6 +118,9 @@
 }
 #phrase{
     font-family: 'SpaceMono-B';
+    width: 550px;
+    height: 90px;
+  font-size: 15px;
 }
 .light-theme #phrase{
     color: #4B6A9B;
@@ -121,7 +128,7 @@
 #middle{
     display: flex;
     flex-direction: column;
-    row-gap: 30px;
+    row-gap: 10px;
     margin-left: 170px;
 }
 .light-theme #middlepart{
@@ -177,19 +184,26 @@
 #footer{
     display: flex;
     flex-direction: row;
-    column-gap:160px ;
+    column-gap:40px ;
     margin-left: 120px;
     font-family:'SpaceMono-R' ;
     font-size: 14px;
 }
-#url{
+#url a{
     cursor: pointer;
+    color: #fff;
+}
+.light-theme #url a{
+    color: #4B6A9B;
 }
 .img{
     margin-right: 10px;
 }
 .light-theme .one img {
    filter: invert(31%) sepia(29%) saturate(343%) hue-rotate(169deg) brightness(94%) contrast(91%);
+}
+#location{
+    margin-right: auto;
 }
 .dark-theme {
     background-color: #141D2F;
@@ -208,10 +222,11 @@
     #first{
         display: flex;
         flex-direction: column;
+        margin-right: auto;
     }
     #content{
         width: 350px;
-        height: 450px;
+        height: 490px;
     }
     #middlepart{
         width: 320px;
@@ -220,33 +235,40 @@
         column-gap: 30px;
     }
     #footer{
-        display:inline-flex;
+        display:flex;
         flex-direction: column;
-        width: 250px;
-        justify-content: flex-start;
-        align-items: flex-start;
+        row-gap: 10px;
+       align-items: flex-start;
+       padding-left: 10px;
+    
+        margin-right: auto;
         margin-left: 0;
     }
     .one{
-        row-gap: 0px;
+        row-gap: 10px;
     }
-    #avatar{
+    .avatar{
         width: 100px;
         height: 100px;
     }
     #date{
-        margin-left: 90px;
+        position: relative;
+        left: 60px;
+        bottom: 20px;
     }
     #middle{
         margin-left: 10px;
-        row-gap: 20px;
+        row-gap: 10px;
+    }
+    #phrase{
+        width: 340px;
+       font-size: 13px;
+        margin-left: 0;
+    }
+    #info{
+        row-gap: 10px;
     }
     #location{
-        margin-right: 40px;
-    }
-    #build {
-        margin-right: 40px;
+        margin-right: auto;
     }
 }
-
-
